@@ -1,0 +1,112 @@
+PART 1
+
+RECURSION
+1. Recursion is similar to nested Russian dolls (or nested penguins). It is when a function appears within itself and is called within itself. Loops and recursion are synonymous with each other -- one can be used in place of the other -- but depending on the situation, one is often the better choice over the other. 
+
+2. It is necessary to have a base case because every recursive function needs a bottom recursive depth in order to know when to start recursing back "up."
+
+
+GRAPHS
+1. A graph is kind of a chaotic tree. :) Graphs have the option of containing loops/cycles. The relationship between nodes can be directed or undirected -- these relationships are connected by edges/arcs. Graphs come in handy for many things, such as when the relationship between nodes needs to be tracked, or when a program needs to find the quickest way to get from one state to another. 
+
+2. As stated earlier, graphs are kind of like less organized trees (this is not always the case). Some big differences between a graph and a tree: graphs can be cyclic or acyclic (trees are only acyclic), graphs can be directed or undirected (trees are only directed) and nodes on a graph can have multiple parents (tree nodes can only have one parent).
+
+3. A graph would be a good model for the complexities of an animal food chain.
+
+
+
+PERFORMANCE of DIFFERENT DATA STRUCTURES
+
+RUNTIMES
+Python List (Array)
+	Add-L: O(n)
+	Pop-L: O(n)
+	Pop-R: O(1)
+
+Linked List
+	Index: O(n)
+	Search: O(n)
+	Add-R: O(1)
+	Add-L: O(1)
+	Pop-L: O(1)
+	Pop-R: O(n)
+
+Doubly-Linked List
+	Index: O(n)
+	Search: O(n)
+	Add-R: O(1)
+	Add-L: O(1)
+	Pop-L: O(1)
+	Pop-R: O(1)
+
+Queue (as Array)
+	Add-R: O(1)
+	Pop-L: O(n)
+
+Queue (as LL or DLL)
+	Add-R: O(1)
+	Pop-L: O(1)
+
+Stack (as Array, LL, or DLL)
+	Add-R: O(1)
+	Pop-R: O(1)
+
+Deque (as DLL)
+	Add-R: O(1)
+	Add-L: O(1)
+	Pop-L: O(1)
+	Pop-R: O(1)	
+
+
+RUNTIME & MEMORY
+Set (Hash Map)
+	Get: O(1)
+	Add: O(1)
+	Delete: O(1)
+	Iterate: O(n)
+	Memory: medium
+
+Binary Search Tree
+	Get: O(log n)
+	Add: O(log n)
+	Delete: O(log n)
+	Iterate: O(n)
+	Memory: not a lot of memory (memory efficient)
+
+Tree
+	Get: O(n)
+	Add: O(1)
+	Delete: O(1)
+	Iterate: O(n)
+	Memory: not a lot of memory (memory efficient)
+
+
+
+SORTING
+1. The Bubble Sort algorithm sorts by iterating through items and slowly having the largest item "bubble" to the top on each iteration. For example) If unsorted_list = [3, 4, 1], on the first iteration of Bubble Sort, 4 compare itself to all the other items and will "bubble" to the right. Second iteration, 3 compare itself to all the other items -- including 4 -- and will "bubble" to the right and stop next to 4. Last iteration, even though 1 is already in place, it will still compare and sort itself into that spot. Runtime is O(n^2).
+
+2. Merge Sort's strategy is divide and conquer. It uses recursion to sort. If Merge Sort is sorting two unsorted lists, it will first sort each of those lists individually by breaking each item down to a list of one -- a list of one is always sorted. From there, Merge Sort will rebuild the list by merging them (hehe... recursion) back together as a sorted list. With two sorted lists, Merge Sort will create an empty list in anticipation of its completed result. Then it will compare the first item of each sorted list. The larger item will get added to the empty result list. This comparison happens until each item in both pre-sorted lists have been compared and appended (or extended) to the result list. Runtime is O(n log n).
+
+3. Quicksort will take a list, choose a random "pivot" item and compare all items of the list to that pivot item. If an item is "smaller" than the pivot item, it goes to the beginning of the list. If an item is "larger" than the pivot item, it goes towards the end of the list. Quicksort also uses recursion. Each time a pivot has found its "rightful" place, Quicksort will call itself on the "low" half of the list and on the "high" part of the list. It does this until the entire list is sorted. Runtime is O(n log n).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
